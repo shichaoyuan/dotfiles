@@ -130,4 +130,4 @@ alias vi=nvim
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 
-export PATH=/home/ubuntu/.local/bin:$PATH
+export PATH=~/.local/bin:$PATH
