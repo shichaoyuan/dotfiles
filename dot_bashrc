@@ -115,6 +115,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export GOPROXY=https://goproxy.io,direct
+
 . "$HOME/.cargo/env"
 
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
@@ -131,3 +134,7 @@ export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 
 export PATH=~/.local/bin:$PATH
+export PATH=$PATH:$VIMCONFIG/pack/minpac/start/fzf/bin
+export FZF_DEFAULT_COMMAND='rg --files'
+
+eval "$(starship init bash)"
