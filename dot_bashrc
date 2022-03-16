@@ -137,4 +137,6 @@ export PATH=~/.local/bin:$PATH
 export PATH=$PATH:$VIMCONFIG/pack/minpac/start/fzf/bin
 export FZF_DEFAULT_COMMAND='rg --files'
 
+export PATH=~/Postman:$PATH
+
 eval "$(starship init bash)"
